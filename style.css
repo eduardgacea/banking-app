@@ -1,0 +1,82 @@
+body {
+  background-color: black;
+}
+
+#main-container {
+  margin: auto;
+  width: 50%;
+}
+
+.text-input-field:focus,
+.submit-button:focus {
+  outline: none !important;
+  border: 1px solid rgb(255, 255, 51);
+  color: rgb(255, 255, 51);
+}
+
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.title {
+  font-family: "VT323", monospace;
+  color: rgb(0, 255, 0);
+  margin: 50px 0px 16px 0px;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.text-input-field {
+  height: 24px;
+  font-size: 20px;
+  border: 1px solid rgb(0, 255, 0);
+  background-color: rgb(51, 51, 51);
+  color: rgb(0, 255, 0);
+  font-family: "VT323", monospace;
+}
+
+.text-input-field::placeholder {
+  font-family: "VT323", monospace;
+  color: rgb(0, 255, 0);
+}
+
+.text-input-field:focus::placeholder {
+  color: transparent;
+}
+
+.text-input-field::-webkit-outer-spin-button,
+.text-input-field::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.submit-button {
+  font-family: "VT323", monospace;
+  text-transform: uppercase;
+  background-color: white;
+  border: 1px solid black;
+  font-size: 22px;
+  /* margin-bottom: 56px; */
+  color: rgb(0, 255, 0);
+  border: 1px solid rgb(0, 255, 0);
+  background-color: black;
+  padding: 8px 0px 8px 0px;
+}
+
+.submit-button:hover {
+  background-color: rgb(51, 51, 51);
+  cursor: pointer;
+}
+
+.submit-button:active {
+  background-color: rgb(255, 255, 51);
+  border-color: rgb(51, 51, 51);
+  color: rgb(51, 51, 51);
+}
+
+#function-calls {
+  margin-top: 72px;
+}

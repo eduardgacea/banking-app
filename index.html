@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>TEMA CURS 19</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" async defer></script>
+  </head>
+  <body>
+    <div id="main-container">
+      <div class="title">create account</div>
+      <form id="account-info" class="form-fields">
+        <input
+          id="account-nr"
+          class="text-input-field"
+          type="number"
+          placeholder="account number"
+        />
+        <input
+          id="account-ID"
+          class="text-input-field"
+          type="text"
+          placeholder="account ID"
+        />
+        <input
+          id="account-balance"
+          class="text-input-field"
+          type="number"
+          placeholder="account balance"
+        />
+        <input
+          id="account-name"
+          class="text-input-field"
+          type="text"
+          placeholder="name"
+        />
+        <input
+          id="create-account-button"
+          class="submit-button"
+          type="button"
+          value="create"
+        />
+      </form>
+      <div class="title">debit account by id</div>
+      <form id="debit-action" class="form-fields">
+        <input
+          id="debit-amount"
+          class="text-input-field"
+          type="number"
+          placeholder="debit amount"
+        />
+        <input
+          id="target-account-id"
+          class="text-input-field"
+          type="text"
+          placeholder="target account ID"
+        />
+        <input
+          id="debit-button"
+          class="submit-button"
+          type="button"
+          value="debit"
+        />
+      </form>
+      <form id="function-calls" class="form-fields">
+        <input
+          class="submit-button"
+          type="button"
+          value="print active accounts"
+          onclick="bank.printActiveAccounts()"
+        />
+        <input
+          class="submit-button"
+          type="button"
+          value="print negative balance accounts"
+          onclick="bank.printNegativeBalanceAccounts()"
+        />
+        <input
+          class="submit-button"
+          type="button"
+          value="delete all accounts"
+          onclick="bank.clearAccountList()"
+        />
+      </form>
+    </div>
+  </body>
+</html>
